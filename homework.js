@@ -28,13 +28,25 @@ function isOdd(number) {
 // return true if it is even and false if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
 
+function isEven(number) {
+    return number % 2 === 0
+}
+
 // 6. Create a function called fahrenheitToCelsius that takes a
 // Fahrenheit temperature as an argument and returns the
-// temperature in Celsius.
+// temperature in Celsius.  Deduct 32, then multiply by 5, then divide by 9
+
+function fahrenheitToCelsius(number) {
+    return ((number - 32) * 5)/9
+}
 
 // 6. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
-// temperature in Fahrenheit.
+// temperature in Fahrenheit.  Multiply by 9, then divide by 5, then add 32
+
+function celsiusToFahrenheit(number) {
+    return (number * 9) / 5 + 32
+}
 
 // 7. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
@@ -43,9 +55,22 @@ function isOdd(number) {
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
 
+function fahrenheitToKelvin(fahrenheitToCelsius) {
+    return (((fahrenheitToCelsius - 32) * 5)/9) + 273.15
+}
+
+
 // 8. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+
+function lesser(x, y)  {
+    if (x > y) {
+        return y
+     } else {
+        return x
+     }
+}
 
 // 9. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
