@@ -2,6 +2,7 @@
 
 const givenName = "Addison"
 
+
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
 const candies = 20
@@ -84,14 +85,47 @@ function lesser(x, y)  {
 //
 // If any other language code is used, return nothing.
 
+
+function multigreeting(name,code) {
+    if (code === 'en') {
+        return `Hello, ${name}!`}
+    else if (code === 'es') {
+        return `¡Hola, ${name}!`}
+    else if (code === 'fr') {
+        return `Bonjour, ${name}!`}
+    else if (code === 'eo') {
+        return `Saluton, ${name}!`}
+}
+
 // 10. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+
+function sum(numbers) {
+    let total = 0
+    for (let number of numbers) {
+        total += number
+    }
+    return total
+}
 
 // 11. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+function average(numbers) {
+    let total = 0
+    let average = 0
+    for (let number of numbers) {
+        total += number
+        average = total / numbers.length
+    } if (average > 0) {
+        return average
+    } 
+}
+
 // 12. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
+
 
 // 13. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
